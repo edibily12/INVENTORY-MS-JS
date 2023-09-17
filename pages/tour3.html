@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tour 3</title>
+
+  <!-- styles part  -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.structure.css">
+  <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.theme.css">
+  <script src="../js/sweetalert.js"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+
+    /*preloader */
+    .preloader{
+      background: #000000;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .removeLoader{
+      animation: slideIn 1.5s forwards;
+    }
+
+    @keyframes slideIn {
+      100% {
+        transform: translateY(-100%);
+        opacity: 1;
+        visibility: hidden;
+      }
+    }
+
+  </style>
+
+<!-- header starts -->
+</head>
+<body>
+<!-- start preloader -->
+<div class="preloader">
+  <img src="../images/loader2.gif" alt="">
+</div>
+<!-- end preloader -->
+
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>All Products</h4>
+          <p class="text-body-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A commodi deleniti, distinctio doloremque eius eveniet fuga, id impedit inventore magnam nobis repellat tempore ullam? Aliquid magni neque nobis rem soluta.
+          </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Products</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<!-- end of header -->
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Products In This Category</h1>
+        <p class="lead text-body-secondary">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam aut autem, consectetur dolores doloribus est fugiat impedit iste iure minus molestias, optio quis quo unde veritatis vitae voluptas voluptatum!
+        </p>
+        <p>
+          <a href="./home.html" type="button" class="btn btn-primary">Back to Home</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../images/1.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button  class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../images/1.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button  class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">19 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../images/3.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button  class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Vieew</button>
+                </div>
+                <small class="text-body-secondary">2 Hrs</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../images/3.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button  class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal">Buy</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-body-secondary">49 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="text-body-secondary py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, autem blanditiis est eum explicabo
+    </p>
+  </div>
+</footer>
+
+<!-- payment modal -->
+<div class="modal fade" id="paymentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalCenteredScrollableTitle">Add Payment</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="needs-validation" id="checkoutForm">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" name="fname" placeholder="" value="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" name="lname" placeholder="" value="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" name="country">
+                <option value="0">Choose...</option>
+                <option value="USA">United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" name="state">
+                <option value="0">Choose...</option>
+                <option value="califonia">California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip"  name="zip"placeholder="">
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="state" class="form-label">Choose Payment Method</label>
+              <select class="form-select" id="paymentMethod" name="paymentMethod">
+                <option value="0">Choose...</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debir Card</option>
+                <option value="paypal">Paypal</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="state" class="form-label">Item Name</label>
+              <input type="text" class="form-control" id=itemname name="item" placeholder="">
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+              <div class="col-md-2">
+                <label for="state" class="form-label">Quantity</label>
+                  <input type="number" class="form-control" id="cc-quantity" name="quantity" placeholder="">
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" name="cardMame" placeholder="">
+              <small class="text-body-secondary">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" name="cardNo" placeholder="">
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="date" class="form-control" id="cc-expiration" name="cardExpiration" placeholder="">
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" name="cvv" placeholder="">
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button id="submitBtn" class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- script part  -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery-ui/jquery-ui.js"></script>
+<script src="../js/products.js"></script>
+
+<script>
+  const loader = document.querySelector('.preloader')
+  window.addEventListener('load', () => {
+    loader.classList.add("removeLoader")
+  })
+</script>
+</body>
+</html>

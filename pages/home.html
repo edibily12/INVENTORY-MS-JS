@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product</title>
+
+  <!-- styles part  -->
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <script src="../js/sweetalert.js"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+    .slide-image{
+      /*background-size: cover;*/
+      height: 410px;
+      width: 100%;
+    }
+
+    /*preloader */
+    .preloader{
+      background: #000000;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .removeLoader{
+      animation: slideIn 1.5s forwards;
+    }
+
+    @keyframes slideIn {
+      100% {
+        transform: translateY(-100%);
+        opacity: 1;
+        visibility: hidden;
+      }
+    }
+
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="../css/product.css" rel="stylesheet">
+</head>
+<body>
+<!-- start preloader -->
+<div class="preloader">
+  <img src="../images/loader2.gif" alt="">
+</div>
+<!-- end preloader -->
+
+<nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand d-md-none" href="#">
+      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+      Aperture
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+          </a></li>
+          <li class="nav-item"><a class="nav-link" href="#tour">Tour</a></li>
+          <li class="nav-item"><a class="nav-link" href="./support.html">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Logout</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <!-- start slide -->
+    <div class="col-md-6 mx-auto w-75">
+        <div>
+          <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="slide-image" src="../images/1.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img class="slide-image" src="../images/3.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="slide-image" src="../images/1.jpg" alt="">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div></div>
+
+        </div>
+    </div>
+    <!-- end slide -->
+
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <!- start  headlines -->
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Another headline</h2>
+        <p class="lead">And an even wittier subheading.</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+    </div>
+  </div>
+  <!- start  headlines -->
+
+  <!--start list group -->
+  <div id="tour" class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container py-5">
+        <h1 class="display-5 mb-3 text-center text-primary fw-bold">TAKE A TOUR NOW</h1>
+        <ul class="list-group">
+          <li class="list-group-item fw-bold display-6"><a href="./tour1.html" class="text-dark text-decoration-none">Category 1</a></li>
+          <li class="list-group-item fw-bold display-6"><a href="./tour2.html" class="text-dark text-decoration-none">Category 2</a></li>
+          <li class="list-group-item fw-bold display-6"><a href="./tour3.html" class="text-dark text-decoration-none">Category 3</a></li>
+          <li class="list-group-item fw-bold display-6"><a href="./tour4.html" class="text-dark text-decoration-none">Category 4</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end list -group -->
+  </div>
+
+</main>
+
+<!-- start footer -->
+<footer class="text-white bg-secondary py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#" class="text-white-50">Back to top</a>
+    </p>
+    <p class="mb-1">
+      Lorem ipsum dolor sit amet,
+    </p>
+  </div>
+</footer>
+<!-- end footer -->
+
+<!-- script part  -->
+<script src="../js/bootstrap.js"></script>
+<script src="../js/app.js"></script>
+
+<script>
+  const loader = document.querySelector('.preloader')
+  window.addEventListener('load', () => {
+    loader.classList.add("removeLoader")
+  })
+</script>
+</body>
+</html>
